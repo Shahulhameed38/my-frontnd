@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="login">
+        <h1>Login</h1>
+        <form id="loginForm">
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    <div id="dashboard" style="display: none;">
+        <h1>Live Dashboard</h1>
+        <div id="devices">
+            <h2>Connected Devices</h2>
+            <ul id="deviceList"></ul>
+        </div>
+        <div id="liveFeeds">
+            <h2>Live Camera Feeds</h2>
+            <video id="cameraFeed" autoplay controls></video>
+        </div>
+        <div id="screenShares">
+            <h2>Live Screen Shares</h2>
+            <video id="screenShareFeed" autoplay controls></video>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
